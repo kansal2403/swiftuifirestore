@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2184804E26C3A8930057EF7E /* SWiftUIFirestoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184804D26C3A8930057EF7E /* SWiftUIFirestoreApp.swift */; };
+		2184805026C3A8930057EF7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184804F26C3A8930057EF7E /* ContentView.swift */; };
+		2184805226C3A8960057EF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2184805126C3A8960057EF7E /* Assets.xcassets */; };
+		2184805526C3A8960057EF7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2184805426C3A8960057EF7E /* Preview Assets.xcassets */; };
+		2184805F26C3A8BC0057EF7E /* CustomerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184805E26C3A8BC0057EF7E /* CustomerRepository.swift */; };
+		2184806426C3A9020057EF7E /* CustomerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184806326C3A9020057EF7E /* CustomerListViewModel.swift */; };
+		2184806826C3A91E0057EF7E /* CustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184806726C3A91E0057EF7E /* CustomerViewModel.swift */; };
+		2184806C26C3A9520057EF7E /* CustomerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184806B26C3A9520057EF7E /* CustomerListView.swift */; };
+		2184806F26C3A9790057EF7E /* CustomerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184806E26C3A9790057EF7E /* CustomerDetailView.swift */; };
+		2184809226C3C29D0057EF7E /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184809126C3C29D0057EF7E /* AddItemView.swift */; };
+		21F2A5FE26C6B84700053261 /* CustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2A5FD26C6B84700053261 /* CustomerCell.swift */; };
+		21F2A61C26C6FD4B00053261 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2A61B26C6FD4B00053261 /* Customer.swift */; };
+		21F2A61F26C6FD5A00053261 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21F2A61E26C6FD5A00053261 /* GoogleService-Info.plist */; };
+		EF44D7A022253F1EAF5443B9 /* Pods_SWiftUIFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E4E1D5622AD676D1A1D9E9 /* Pods_SWiftUIFirestore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2184804A26C3A8930057EF7E /* SWiftUIFirestore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWiftUIFirestore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2184804D26C3A8930057EF7E /* SWiftUIFirestoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWiftUIFirestoreApp.swift; sourceTree = "<group>"; };
+		2184804F26C3A8930057EF7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2184805126C3A8960057EF7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2184805426C3A8960057EF7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2184805626C3A8960057EF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2184805E26C3A8BC0057EF7E /* CustomerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRepository.swift; sourceTree = "<group>"; };
+		2184806326C3A9020057EF7E /* CustomerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewModel.swift; sourceTree = "<group>"; };
+		2184806726C3A91E0057EF7E /* CustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewModel.swift; sourceTree = "<group>"; };
+		2184806B26C3A9520057EF7E /* CustomerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListView.swift; sourceTree = "<group>"; };
+		2184806E26C3A9790057EF7E /* CustomerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailView.swift; sourceTree = "<group>"; };
+		2184809126C3C29D0057EF7E /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		21F2A5FD26C6B84700053261 /* CustomerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCell.swift; sourceTree = "<group>"; };
+		21F2A61B26C6FD4B00053261 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		21F2A61E26C6FD5A00053261 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		34F3BEBED8A278810C921680 /* Pods-SWiftUIFirestore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWiftUIFirestore.debug.xcconfig"; path = "Target Support Files/Pods-SWiftUIFirestore/Pods-SWiftUIFirestore.debug.xcconfig"; sourceTree = "<group>"; };
+		3B53E6CAB26E29B2FF3CE9F5 /* Pods-SWiftUIFirestore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWiftUIFirestore.release.xcconfig"; path = "Target Support Files/Pods-SWiftUIFirestore/Pods-SWiftUIFirestore.release.xcconfig"; sourceTree = "<group>"; };
+		F4E4E1D5622AD676D1A1D9E9 /* Pods_SWiftUIFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWiftUIFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2184804726C3A8930057EF7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF44D7A022253F1EAF5443B9 /* Pods_SWiftUIFirestore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2184804126C3A8930057EF7E = {
+			isa = PBXGroup;
+			children = (
+				2184804C26C3A8930057EF7E /* SWiftUIFirestore */,
+				2184804B26C3A8930057EF7E /* Products */,
+				A4C94106196B834CB6D82D09 /* Pods */,
+				7FFB587AF9E0B20AC4FC0918 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2184804B26C3A8930057EF7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2184804A26C3A8930057EF7E /* SWiftUIFirestore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2184804C26C3A8930057EF7E /* SWiftUIFirestore */ = {
+			isa = PBXGroup;
+			children = (
+				21F2A61A26C6FD4B00053261 /* Models */,
+				2184806A26C3A93F0057EF7E /* Views */,
+				2184806226C3A8F30057EF7E /* ViewModel */,
+				2184805D26C3A8AF0057EF7E /* Repo */,
+				2184804D26C3A8930057EF7E /* SWiftUIFirestoreApp.swift */,
+				2184804F26C3A8930057EF7E /* ContentView.swift */,
+				2184805126C3A8960057EF7E /* Assets.xcassets */,
+				2184805626C3A8960057EF7E /* Info.plist */,
+				21F2A61E26C6FD5A00053261 /* GoogleService-Info.plist */,
+				2184805326C3A8960057EF7E /* Preview Content */,
+			);
+			path = SWiftUIFirestore;
+			sourceTree = "<group>";
+		};
+		2184805326C3A8960057EF7E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2184805426C3A8960057EF7E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2184805D26C3A8AF0057EF7E /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				2184805E26C3A8BC0057EF7E /* CustomerRepository.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		2184806226C3A8F30057EF7E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2184806326C3A9020057EF7E /* CustomerListViewModel.swift */,
+				2184806726C3A91E0057EF7E /* CustomerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2184806A26C3A93F0057EF7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2184806B26C3A9520057EF7E /* CustomerListView.swift */,
+				2184806E26C3A9790057EF7E /* CustomerDetailView.swift */,
+				2184809126C3C29D0057EF7E /* AddItemView.swift */,
+				21F2A5FD26C6B84700053261 /* CustomerCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		21F2A61A26C6FD4B00053261 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				21F2A61B26C6FD4B00053261 /* Customer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7FFB587AF9E0B20AC4FC0918 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4E4E1D5622AD676D1A1D9E9 /* Pods_SWiftUIFirestore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4C94106196B834CB6D82D09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34F3BEBED8A278810C921680 /* Pods-SWiftUIFirestore.debug.xcconfig */,
+				3B53E6CAB26E29B2FF3CE9F5 /* Pods-SWiftUIFirestore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2184804926C3A8930057EF7E /* SWiftUIFirestore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2184805926C3A8960057EF7E /* Build configuration list for PBXNativeTarget "SWiftUIFirestore" */;
+			buildPhases = (
+				7978121AC057B6F6625486AF /* [CP] Check Pods Manifest.lock */,
+				2184804626C3A8930057EF7E /* Sources */,
+				2184804726C3A8930057EF7E /* Frameworks */,
+				2184804826C3A8930057EF7E /* Resources */,
+				D3467E154BE61FA3007D15D3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWiftUIFirestore;
+			productName = SWiftUIFirestore;
+			productReference = 2184804A26C3A8930057EF7E /* SWiftUIFirestore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2184804226C3A8930057EF7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					2184804926C3A8930057EF7E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 2184804526C3A8930057EF7E /* Build configuration list for PBXProject "SWiftUIFirestore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2184804126C3A8930057EF7E;
+			productRefGroup = 2184804B26C3A8930057EF7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2184804926C3A8930057EF7E /* SWiftUIFirestore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2184804826C3A8930057EF7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2184805526C3A8960057EF7E /* Preview Assets.xcassets in Resources */,
+				21F2A61F26C6FD5A00053261 /* GoogleService-Info.plist in Resources */,
+				2184805226C3A8960057EF7E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7978121AC057B6F6625486AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWiftUIFirestore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3467E154BE61FA3007D15D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SWiftUIFirestore/Pods-SWiftUIFirestore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SWiftUIFirestore/Pods-SWiftUIFirestore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SWiftUIFirestore/Pods-SWiftUIFirestore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2184804626C3A8930057EF7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2184806426C3A9020057EF7E /* CustomerListViewModel.swift in Sources */,
+				21F2A61C26C6FD4B00053261 /* Customer.swift in Sources */,
+				2184809226C3C29D0057EF7E /* AddItemView.swift in Sources */,
+				2184806F26C3A9790057EF7E /* CustomerDetailView.swift in Sources */,
+				2184806826C3A91E0057EF7E /* CustomerViewModel.swift in Sources */,
+				2184806C26C3A9520057EF7E /* CustomerListView.swift in Sources */,
+				2184805F26C3A8BC0057EF7E /* CustomerRepository.swift in Sources */,
+				2184805026C3A8930057EF7E /* ContentView.swift in Sources */,
+				2184804E26C3A8930057EF7E /* SWiftUIFirestoreApp.swift in Sources */,
+				21F2A5FE26C6B84700053261 /* CustomerCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2184805726C3A8960057EF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2184805826C3A8960057EF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2184805A26C3A8960057EF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F3BEBED8A278810C921680 /* Pods-SWiftUIFirestore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SWiftUIFirestore/Preview Content\"";
+				DEVELOPMENT_TEAM = WLJYS226TP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SWiftUIFirestore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OAESolutions.SWiftUIFirestore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2184805B26C3A8960057EF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B53E6CAB26E29B2FF3CE9F5 /* Pods-SWiftUIFirestore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SWiftUIFirestore/Preview Content\"";
+				DEVELOPMENT_TEAM = WLJYS226TP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SWiftUIFirestore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OAESolutions.SWiftUIFirestore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2184804526C3A8930057EF7E /* Build configuration list for PBXProject "SWiftUIFirestore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2184805726C3A8960057EF7E /* Debug */,
+				2184805826C3A8960057EF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2184805926C3A8960057EF7E /* Build configuration list for PBXNativeTarget "SWiftUIFirestore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2184805A26C3A8960057EF7E /* Debug */,
+				2184805B26C3A8960057EF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2184804226C3A8930057EF7E /* Project object */;
+}
