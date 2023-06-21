@@ -43,8 +43,12 @@ class CustomerRepository: ObservableObject {
         }
     }
     
-    func createCustomer(_ customerName: String, completion: @escaping ()-> Void) {
-        let customer = Customer.init(id: nil, name: customerName, status: 0)
+    func createCustomer(
+        name: String,
+        age: Int,
+        completion: @escaping ()-> Void
+    ) {
+        let customer = Customer.init(id: nil, name: name, age: age, status: 0)
         do {
             try store.collection(path).document().setData(from: customer, completion: { _ in
                 completion()

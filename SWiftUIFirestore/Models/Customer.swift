@@ -10,6 +10,7 @@ import FirebaseFirestoreSwift
 
 struct Customer: Codable, Identifiable {
     @DocumentID var id: String? = UUID().uuidString
-    var name: String
-    var status: Int
+    let name: String
+    let age: Int
+    let status: Int
 }

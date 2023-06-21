@@ -11,39 +11,32 @@ import Combine
 
 class CustomerListViewModel: ObservableObject {
     
-    @Published var moveToAddTeam = false
-    var customerNam = ""
-    @Published var customerViewModels: [CustomerViewModel] = []
-    
+    @Published var showAddTeamView = false
+    @Published var customersModels: [Customer] = []
     private var cancellables: Set<AnyCancellable> = []
     
     @Published var customerRepository = CustomerRepository()
     
     init() {
-        print("CustomerListViewModel init")
-        customerRepository.$customers.map { customers in
-            customers.map { customr in
-                return CustomerViewModel.init(customer: customr)
+        customerRepository.$customers
+            .map { customers in
+                customers
             }
-        }
-        .assign(to: \.customerViewModels, on: self)
-        .store(in: &cancellables)
+            .assign(to: \.customersModels, on: self)
+            .store(in: &cancellables)
     }
     
-    func addTeamTapped() {
-        print("Add team tapped ")
-        moveToAddTeam.toggle()
+    func onTapAddTeam() {
+        showAddTeamView.toggle()
     }
     
-    func createCustomer() {
-        customerRepository.createCustomer(customerNam) { [self] in
-            customerNam = ""
-            moveToAddTeam.toggle()
-            print("moveToAddTeam after adding Cust \(moveToAddTeam)")
-        }
+    func onTapCancelAddTeam() {
+        showAddTeamView.toggle()
     }
     
-    deinit {
-        print("CustomerListViewModel deinit")
+    func createCustomer(name: String, age: Int) {
+        customerRepository.createCustomer(name: name, age: age, completion: { [self] in
+            showAddTeamView.toggle()
+        })
     }
 }

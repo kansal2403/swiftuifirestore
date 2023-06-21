@@ -9,38 +9,38 @@ import SwiftUI
 
 struct CustomerListView: View {
     
-    @ObservedObject var customerListViewModel = CustomerListViewModel()
+    @StateObject var viewModel: CustomerListViewModel
     
     var body: some View {
-        NavigationView {
-            VStack {
-                NavigationLink(destination: AddItemView(viewModel: customerListViewModel), isActive: $customerListViewModel.moveToAddTeam, label: {
-                    EmptyView()
+        
+        ZStack {
+            
+            NavigationView {
+                VStack {
+                    List(viewModel.customersModels, id: \.id) { cellInfo in
+                        CustomerCell(customer: cellInfo)
+                    }
+                }
+                .navigationTitle("Customers List")
+                .toolbar {
+                    Button("Add") {
+                        viewModel.onTapAddTeam()
+                    }
+                }
+            }
+            
+            if viewModel.showAddTeamView {
+                AddCustomerView(onTapAdd: { (customerName, age) in
+                    viewModel.createCustomer(name: customerName, age: age)
                 })
-                
-                HStack {
-                    Text("Add Customer +")
-                        .font(.system(size: 20))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color.secondary)
-                        .padding(.vertical)
-                }
-                .onTapGesture {
-                    customerListViewModel.addTeamTapped()
-                    print("addTeamTapped()")
-                }
-                .frame(width: 150, height: 54)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.secondary, lineWidth: 1)
-                )
-                
-                List(customerListViewModel.customerViewModels, id: \.id) { cellInfo in
-                    CustomerCell(cellInfo)
-                }
-                
-                Spacer()
+                .ignoresSafeArea()
             }
         }
+    }
+}
+
+struct CustomerListView_Previews: PreviewProvider {
+    static var previews: some View {
+        CustomerListView(viewModel: CustomerListViewModel())
     }
 }

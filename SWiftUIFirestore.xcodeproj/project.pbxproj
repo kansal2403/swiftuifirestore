@@ -3,24 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213C4AA72A41DCB2008A13C1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 213C4AA62A41DCB2008A13C1 /* FirebaseFirestore */; };
+		213C4AA92A41DCB2008A13C1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 213C4AA82A41DCB2008A13C1 /* FirebaseFirestoreSwift */; };
 		2184804E26C3A8930057EF7E /* SWiftUIFirestoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184804D26C3A8930057EF7E /* SWiftUIFirestoreApp.swift */; };
 		2184805026C3A8930057EF7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184804F26C3A8930057EF7E /* ContentView.swift */; };
 		2184805226C3A8960057EF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2184805126C3A8960057EF7E /* Assets.xcassets */; };
 		2184805526C3A8960057EF7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2184805426C3A8960057EF7E /* Preview Assets.xcassets */; };
 		2184805F26C3A8BC0057EF7E /* CustomerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184805E26C3A8BC0057EF7E /* CustomerRepository.swift */; };
 		2184806426C3A9020057EF7E /* CustomerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184806326C3A9020057EF7E /* CustomerListViewModel.swift */; };
-		2184806826C3A91E0057EF7E /* CustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184806726C3A91E0057EF7E /* CustomerViewModel.swift */; };
 		2184806C26C3A9520057EF7E /* CustomerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184806B26C3A9520057EF7E /* CustomerListView.swift */; };
-		2184806F26C3A9790057EF7E /* CustomerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184806E26C3A9790057EF7E /* CustomerDetailView.swift */; };
-		2184809226C3C29D0057EF7E /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184809126C3C29D0057EF7E /* AddItemView.swift */; };
+		2184809226C3C29D0057EF7E /* AddCustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184809126C3C29D0057EF7E /* AddCustomerView.swift */; };
 		21F2A5FE26C6B84700053261 /* CustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2A5FD26C6B84700053261 /* CustomerCell.swift */; };
 		21F2A61C26C6FD4B00053261 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2A61B26C6FD4B00053261 /* Customer.swift */; };
 		21F2A61F26C6FD5A00053261 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21F2A61E26C6FD5A00053261 /* GoogleService-Info.plist */; };
-		EF44D7A022253F1EAF5443B9 /* Pods_SWiftUIFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E4E1D5622AD676D1A1D9E9 /* Pods_SWiftUIFirestore.framework */; };
+		21F948492A433A4D00132B4C /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F948482A433A4D00132B4C /* View+Ext.swift */; };
+		21F9484C2A433B1500132B4C /* RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F9484B2A433B1500132B4C /* RoundCorner.swift */; };
+		21F948502A433B6F00132B4C /* BackDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F9484F2A433B6F00132B4C /* BackDropView.swift */; };
+		21F948522A433B8600132B4C /* BackdropBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F948512A433B8600132B4C /* BackdropBlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,16 +35,15 @@
 		2184805626C3A8960057EF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2184805E26C3A8BC0057EF7E /* CustomerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRepository.swift; sourceTree = "<group>"; };
 		2184806326C3A9020057EF7E /* CustomerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewModel.swift; sourceTree = "<group>"; };
-		2184806726C3A91E0057EF7E /* CustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewModel.swift; sourceTree = "<group>"; };
 		2184806B26C3A9520057EF7E /* CustomerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListView.swift; sourceTree = "<group>"; };
-		2184806E26C3A9790057EF7E /* CustomerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailView.swift; sourceTree = "<group>"; };
-		2184809126C3C29D0057EF7E /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		2184809126C3C29D0057EF7E /* AddCustomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerView.swift; sourceTree = "<group>"; };
 		21F2A5FD26C6B84700053261 /* CustomerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCell.swift; sourceTree = "<group>"; };
 		21F2A61B26C6FD4B00053261 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		21F2A61E26C6FD5A00053261 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		34F3BEBED8A278810C921680 /* Pods-SWiftUIFirestore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWiftUIFirestore.debug.xcconfig"; path = "Target Support Files/Pods-SWiftUIFirestore/Pods-SWiftUIFirestore.debug.xcconfig"; sourceTree = "<group>"; };
-		3B53E6CAB26E29B2FF3CE9F5 /* Pods-SWiftUIFirestore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWiftUIFirestore.release.xcconfig"; path = "Target Support Files/Pods-SWiftUIFirestore/Pods-SWiftUIFirestore.release.xcconfig"; sourceTree = "<group>"; };
-		F4E4E1D5622AD676D1A1D9E9 /* Pods_SWiftUIFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWiftUIFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F948482A433A4D00132B4C /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		21F9484B2A433B1500132B4C /* RoundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorner.swift; sourceTree = "<group>"; };
+		21F9484F2A433B6F00132B4C /* BackDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackDropView.swift; sourceTree = "<group>"; };
+		21F948512A433B8600132B4C /* BackdropBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropBlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF44D7A022253F1EAF5443B9 /* Pods_SWiftUIFirestore.framework in Frameworks */,
+				213C4AA72A41DCB2008A13C1 /* FirebaseFirestore in Frameworks */,
+				213C4AA92A41DCB2008A13C1 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +64,6 @@
 			children = (
 				2184804C26C3A8930057EF7E /* SWiftUIFirestore */,
 				2184804B26C3A8930057EF7E /* Products */,
-				A4C94106196B834CB6D82D09 /* Pods */,
-				7FFB587AF9E0B20AC4FC0918 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,10 +78,13 @@
 		2184804C26C3A8930057EF7E /* SWiftUIFirestore */ = {
 			isa = PBXGroup;
 			children = (
+				21F9484D2A433B2A00132B4C /* Custom Views */,
+				21F9484A2A433AFC00132B4C /* Shapes */,
+				21F948472A432DE800132B4C /* Extensions */,
 				21F2A61A26C6FD4B00053261 /* Models */,
 				2184806A26C3A93F0057EF7E /* Views */,
 				2184806226C3A8F30057EF7E /* ViewModel */,
-				2184805D26C3A8AF0057EF7E /* Repo */,
+				2184805D26C3A8AF0057EF7E /* Repositories */,
 				2184804D26C3A8930057EF7E /* SWiftUIFirestoreApp.swift */,
 				2184804F26C3A8930057EF7E /* ContentView.swift */,
 				2184805126C3A8960057EF7E /* Assets.xcassets */,
@@ -99,19 +103,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2184805D26C3A8AF0057EF7E /* Repo */ = {
+		2184805D26C3A8AF0057EF7E /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 				2184805E26C3A8BC0057EF7E /* CustomerRepository.swift */,
 			);
-			path = Repo;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		2184806226C3A8F30057EF7E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				2184806326C3A9020057EF7E /* CustomerListViewModel.swift */,
-				2184806726C3A91E0057EF7E /* CustomerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -120,8 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				2184806B26C3A9520057EF7E /* CustomerListView.swift */,
-				2184806E26C3A9790057EF7E /* CustomerDetailView.swift */,
-				2184809126C3C29D0057EF7E /* AddItemView.swift */,
+				2184809126C3C29D0057EF7E /* AddCustomerView.swift */,
 				21F2A5FD26C6B84700053261 /* CustomerCell.swift */,
 			);
 			path = Views;
@@ -135,21 +137,37 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		7FFB587AF9E0B20AC4FC0918 /* Frameworks */ = {
+		21F948472A432DE800132B4C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F4E4E1D5622AD676D1A1D9E9 /* Pods_SWiftUIFirestore.framework */,
+				21F948482A433A4D00132B4C /* View+Ext.swift */,
 			);
-			name = Frameworks;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A4C94106196B834CB6D82D09 /* Pods */ = {
+		21F9484A2A433AFC00132B4C /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				34F3BEBED8A278810C921680 /* Pods-SWiftUIFirestore.debug.xcconfig */,
-				3B53E6CAB26E29B2FF3CE9F5 /* Pods-SWiftUIFirestore.release.xcconfig */,
+				21F9484B2A433B1500132B4C /* RoundCorner.swift */,
 			);
-			path = Pods;
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		21F9484D2A433B2A00132B4C /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				21F9484E2A433B5600132B4C /* UIViewRepresentables */,
+				21F948512A433B8600132B4C /* BackdropBlurView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		21F9484E2A433B5600132B4C /* UIViewRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				21F9484F2A433B6F00132B4C /* BackDropView.swift */,
+			);
+			path = UIViewRepresentables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,17 +177,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2184805926C3A8960057EF7E /* Build configuration list for PBXNativeTarget "SWiftUIFirestore" */;
 			buildPhases = (
-				7978121AC057B6F6625486AF /* [CP] Check Pods Manifest.lock */,
 				2184804626C3A8930057EF7E /* Sources */,
 				2184804726C3A8930057EF7E /* Frameworks */,
 				2184804826C3A8930057EF7E /* Resources */,
-				D3467E154BE61FA3007D15D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SWiftUIFirestore;
+			packageProductDependencies = (
+				213C4AA62A41DCB2008A13C1 /* FirebaseFirestore */,
+				213C4AA82A41DCB2008A13C1 /* FirebaseFirestoreSwift */,
+			);
 			productName = SWiftUIFirestore;
 			productReference = 2184804A26C3A8930057EF7E /* SWiftUIFirestore.app */;
 			productType = "com.apple.product-type.application";
@@ -197,6 +217,9 @@
 				Base,
 			);
 			mainGroup = 2184804126C3A8930057EF7E;
+			packageReferences = (
+				213C4AA52A41DCB2008A13C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 2184804B26C3A8930057EF7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -219,48 +242,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		7978121AC057B6F6625486AF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SWiftUIFirestore-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D3467E154BE61FA3007D15D3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SWiftUIFirestore/Pods-SWiftUIFirestore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SWiftUIFirestore/Pods-SWiftUIFirestore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SWiftUIFirestore/Pods-SWiftUIFirestore-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		2184804626C3A8930057EF7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,14 +249,16 @@
 			files = (
 				2184806426C3A9020057EF7E /* CustomerListViewModel.swift in Sources */,
 				21F2A61C26C6FD4B00053261 /* Customer.swift in Sources */,
-				2184809226C3C29D0057EF7E /* AddItemView.swift in Sources */,
-				2184806F26C3A9790057EF7E /* CustomerDetailView.swift in Sources */,
-				2184806826C3A91E0057EF7E /* CustomerViewModel.swift in Sources */,
+				21F948492A433A4D00132B4C /* View+Ext.swift in Sources */,
+				2184809226C3C29D0057EF7E /* AddCustomerView.swift in Sources */,
 				2184806C26C3A9520057EF7E /* CustomerListView.swift in Sources */,
 				2184805F26C3A8BC0057EF7E /* CustomerRepository.swift in Sources */,
 				2184805026C3A8930057EF7E /* ContentView.swift in Sources */,
 				2184804E26C3A8930057EF7E /* SWiftUIFirestoreApp.swift in Sources */,
 				21F2A5FE26C6B84700053261 /* CustomerCell.swift in Sources */,
+				21F9484C2A433B1500132B4C /* RoundCorner.swift in Sources */,
+				21F948502A433B6F00132B4C /* BackDropView.swift in Sources */,
+				21F948522A433B8600132B4C /* BackdropBlurView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +383,6 @@
 		};
 		2184805A26C3A8960057EF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34F3BEBED8A278810C921680 /* Pods-SWiftUIFirestore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -414,7 +396,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = OAESolutions.SWiftUIFirestore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oaesolutions.SwiftUIFirestore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -423,7 +405,6 @@
 		};
 		2184805B26C3A8960057EF7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B53E6CAB26E29B2FF3CE9F5 /* Pods-SWiftUIFirestore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -437,7 +418,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = OAESolutions.SWiftUIFirestore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oaesolutions.SwiftUIFirestore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,6 +447,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		213C4AA52A41DCB2008A13C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		213C4AA62A41DCB2008A13C1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 213C4AA52A41DCB2008A13C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		213C4AA82A41DCB2008A13C1 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 213C4AA52A41DCB2008A13C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2184804226C3A8930057EF7E /* Project object */;
 }

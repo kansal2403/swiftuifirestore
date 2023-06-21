@@ -9,35 +9,35 @@ import SwiftUI
 
 struct CustomerCell: View {
     
-    @ObservedObject private(set) var viewModel: CustomerViewModel
-    private let memoryTest = DeallocPrinter()
-    
-    init(_ viewModel: CustomerViewModel) {
-        self.viewModel = viewModel
-        print("CustomerCell init")
-    }
-    
-    private let layout = [
+    let customer: Customer
+    private let gridLayout = [
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
     
     var body: some View {
-        
-        VStack{
-            Text("\(viewModel.name) and id == \(viewModel.id)")
+        VStack {
+            HStack {
+                Text(customer.name)
+                    .font(.title2)
+                    .fontWeight(.medium)
+                Spacer()
+                Text("\(customer.age)")
+                    .font(.title2)
+                    .fontWeight(.medium)
+            }
+            HStack {
+                Text(customer.id ?? "")
+                    .font(.body)
+                Spacer()
+            }
         }
     }
 }
 
-class DeallocPrinter {
-    deinit {
-        print("deallocated")
+
+struct CustomerCell_Previews: PreviewProvider {
+    static var previews: some View {
+        CustomerCell(customer: Customer.init(name: "Test User", age: 32, status: 0))
     }
 }
-
-//struct CustomerCell_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CustomerCell()
-//    }
-//}
