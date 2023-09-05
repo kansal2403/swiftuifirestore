@@ -35,9 +35,12 @@ struct CustomerCell: View {
     }
 }
 
-
 struct CustomerCell_Previews: PreviewProvider {
     static var previews: some View {
-        CustomerCell(customer: Customer.init(name: "Test User", age: 32, status: 0))
+        CustomerCell(
+            customer: Customer.init(
+                name: "Test User",
+                age: 32,
+                status: 0))
     }
 }

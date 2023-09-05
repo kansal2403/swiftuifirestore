@@ -9,6 +9,7 @@ import SwiftUI
 
 typealias OnTapAddCustomer = (String, Int)->Void
 struct AddCustomerView: View {
+    @Binding var isPresented: Bool
     var onTapAdd: OnTapAddCustomer
     @State private var customerName: String = ""
     @State private var customerAge: String = ""
@@ -81,11 +82,14 @@ struct AddCustomerView: View {
                         .stroke(Color.secondary, lineWidth: 1))
             })
         }
+        .onTapGesture {
+            isPresented.toggle()
+        }
     }
 }
 
 struct MyPreviewProvider_Previews: PreviewProvider {
     static var previews: some View {
-        AddCustomerView { _, _ in }
+        AddCustomerView(isPresented: .constant(true)) { _, _ in }
     }
 }

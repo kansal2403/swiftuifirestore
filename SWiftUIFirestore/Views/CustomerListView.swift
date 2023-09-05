@@ -30,10 +30,10 @@ struct CustomerListView: View {
             }
             
             if viewModel.showAddTeamView {
-                AddCustomerView(onTapAdd: { (customerName, age) in
-                    viewModel.createCustomer(name: customerName, age: age)
-                })
-                .ignoresSafeArea()
+                AddCustomerView(isPresented: $viewModel.showAddTeamView,
+                                onTapAdd: viewModel.createCustomer)
+                .transition(.move(edge: .top))
+                .ignoresSafeArea()                
             }
         }
     }
