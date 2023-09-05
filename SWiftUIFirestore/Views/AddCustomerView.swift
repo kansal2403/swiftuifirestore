@@ -18,6 +18,9 @@ struct AddCustomerView: View {
         ZStack {
             BackdropBlurView(radius: 10.0)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .onTapGesture {
+                    isPresented.toggle()
+                }
             
             VStack(alignment: .center, content: {
                 Spacer()
@@ -81,9 +84,6 @@ struct AddCustomerView: View {
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.secondary, lineWidth: 1))
             })
-        }
-        .onTapGesture {
-            isPresented.toggle()
         }
     }
 }

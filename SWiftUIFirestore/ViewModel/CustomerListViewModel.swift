@@ -34,9 +34,7 @@ class CustomerListViewModel: ObservableObject {
         showAddTeamView.toggle()
     }
     
-    func createCustomer(name: String, age: Int) {
-        showAddTeamView.toggle()
-        
+    func createCustomer(name: String, age: Int) {        
         customerRepository.createCustomer(
             name: name,
             age: age,
